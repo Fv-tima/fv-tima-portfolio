@@ -6,7 +6,6 @@ import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer";
 import {useState} from 'react'
-import { BrowserRouter as Router, Route } from "react-router-dom";
 export default function App() {
   const [darkMode, setDarkMode] = useState(false)
   function toggle() {
