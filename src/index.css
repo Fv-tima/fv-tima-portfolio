@@ -62,6 +62,7 @@ button:hover, .btn2:hover{
 nav{
   background-color: var(--sec-green) !important;
   color: var(--white);
+  
 }
 nav .nav-link{
   padding: 20px 30px !important;

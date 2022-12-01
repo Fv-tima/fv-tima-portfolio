@@ -3,7 +3,7 @@ import resume from '../image/resume.pdf'
 
 export default function Home() {
   return (
-    <div className="container px-4" data-aos="fade-up">
+    <div className="container " data-aos="fade-up">
       <section id="home">
         <h1>
           Hi<span>!</span>,
