@@ -1,19 +1,19 @@
 import React from "react";
-import Header from "./components/Header.jsx";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer";
 import {useState} from 'react'
+import Nav from "./components/Navbar/Nav.jsx";
 export default function App() {
   const [darkMode, setDarkMode] = useState(false)
   function toggle() {
     setDarkMode(prev => !prev)
   }
   return (
-    <div className={darkMode ? "dark" : ""}>
-      <Header toggle={toggle} darkMode={darkMode} />
+    <div className={`wrapper${ darkMode? "dark": "" }`}>
+      <Nav toggle={toggle}  />
 
       <Home />
 
@@ -23,7 +23,7 @@ export default function App() {
 
       <Contact />
 
-      <Footer darkMode={darkMode} />
+      <Footer  />
     </div>
   );
 }

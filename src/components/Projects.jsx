@@ -4,6 +4,7 @@ import fylo from "../image/fylo.png";
 import smart from "../image/smart.png";
 import movie from "../image/movie.png";
 import gitP from "../image/git profile.png";
+import todo from "../image/todos.png"
 
 
 export default function Project() {
@@ -45,6 +46,14 @@ export default function Project() {
         "A github profile finder built using html,css and javascript",
       live: "https://my-github-profile-finder.netlify.app/",
       github: "https://github.com/Fv-tima/github-profile-finder",
+    },
+    {
+      img: todo,
+      title: "Todos app",
+      description:
+        "A todo app built using react js with a delete and completed feature",
+      live: "https://fv-tima.github.io/todos-app/",
+      github: "https://github.com/Fv-tima/todos-app",
     },
   ];
 

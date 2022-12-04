@@ -1,30 +1,28 @@
+
 /* General */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-background: var(--sec-green) ! important;
-color: var(--white) ! important;
+
 overflow-x: hidden;
 }
-body::before{
- display: block !important;
- content: '' !important;
- height: 60px !important;
-}
+
 :root{
 --white:#ffffff;
 --pry-green: #19a295;
 --sec-green:#051522;
---yellow:#ffd700;
 --other-green:#06101a;
 }
-.logo{
-  width: 80px;
+.wrapper{
+background: var(--sec-green) ! important;
+color: var(--white) ! important  ;
 }
 .dark{
- background: var(--white) !important;
- color: var(--other-green);
+ /* background: var(--white) !important;
+ color: var(--other-green); */
+ --sec-green:#ffffff  ! important;
+ --white:#06101a  ! important;
 }
 .icon{
   font-size: 40px;
@@ -54,33 +52,13 @@ button:hover, .btn2:hover{
   background-color: var(--pry-green);
   color: var(--white);
 }
-/* Navbar */
-.navbar-toggler{
-   background-color: var(--pry-green) !important;
- 
-}
-nav{
-  background-color: var(--sec-green) !important;
-  color: var(--white);
-  
-}
-nav .nav-link{
-  padding: 20px 30px !important;
-  font-size: 20px !important;
-}
-.nav-link:hover{
-  transition: all 0.3s ease-in-out;
-  color: var(--pry-green) !important;
-}
-.nav-link:active{
-  text-decoration-line: var(--pry-green) !important;
-}
 /* Home */
 #home{
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 90vh;
+  
   }
 #home h1{
 font-size: 50px;
@@ -142,6 +120,7 @@ position: relative;
 }
 .project-image{
   width: 100%;
+  height: 200px;
 }
 .link{
   display: flex;
@@ -181,8 +160,6 @@ footer{
   border-top: 1px solid grey;
   text-align:center;
   margin: 0;
-  background-color: var(--sec-green);
-  color: var(--white);
   max-height: 100vh;
   padding: 50px 0;
 }
